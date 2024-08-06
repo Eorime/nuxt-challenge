@@ -1,6 +1,6 @@
 <template>
     <div class="logo">
-logo
+<img src="../../assets/images/logo.png">
     </div>
 </template>
 
@@ -9,5 +9,6 @@ logo
 </script>
 
 <style lang="scss" scoped>
+
 
 </style>

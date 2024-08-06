@@ -4,6 +4,8 @@ $hover-color: #C16060;
 $font-family: "Inter", sans-serif;
 $font-weight: 400;
 
+
+//ver waikitxa
 body {
     background-color: $background-color;
     font-family: $font-family;
@@ -11,3 +13,17 @@ body {
     font-weight: $font-weight;
 }
 
+@mixin items-spacing($direction, $margin) {
+    display: flex;
+    @if $direction == 'vertical' {
+      flex-direction: column;
+      > * + * {
+        margin-top: $margin;
+      }
+    } @else if $direction == 'horizontal' {
+      flex-direction: row;
+      > * + * {
+        margin-left: $margin;
+      }
+    }
+  }

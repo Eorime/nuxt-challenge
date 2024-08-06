@@ -1,6 +1,8 @@
 <template>
       <div class="main-page">
       <header-main/>
+      <headertext-header-text/>
+      <socialswrapper-socials-wrapper/>
           </div>
 </template>
 
