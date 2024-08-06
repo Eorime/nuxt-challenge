@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <h1>navigacia</h1>
+    <div class="logo">
+logo
     </div>
 </template>
 
