@@ -1,0 +1,13 @@
+$background-color: #dddddd;
+$font-color: #000000;
+$hover-color: #C16060;
+$font-family: "Inter", sans-serif;
+$font-weight: 400;
+
+body {
+    background-color: $background-color;
+    font-family: $font-family;
+    color: $font-color;
+    font-weight: $font-weight;
+}
+
