@@ -3,6 +3,7 @@
       <header-main/>
       <headertext-header-text/>
       <socialswrapper-socials-wrapper/>
+      <mainimage-main-image/>
           </div>
 </template>
 

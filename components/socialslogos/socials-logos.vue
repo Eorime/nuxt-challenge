@@ -13,10 +13,17 @@
 .socialsLogosDiv {
     display: flex;
     flex-direction: row;
-}
+
 .logoImage {
     margin-right: 11px;
     margin-top: -20px;
-}
+    opacity: 1;
+    transition: opacity  0.3s ease-in;
 
+    &:hover {
+        cursor: pointer;
+        opacity: 0.6;
+    }
+}
+}
 </style>
