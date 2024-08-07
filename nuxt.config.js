@@ -1,6 +1,14 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default {
-  compatibilityDate: '2024-04-03',
+  modules: [
+    [
+      "@pinia/nuxt",
+      {
+        autoImports: ["defineStore"],
+      },
+    ],
+  ],
+  compatibilityDate: "2024-04-03",
   devtools: { enabled: false },
   vite: {
     css: {
@@ -11,7 +19,7 @@ export default {
       },
     },
   },
-  build:{
-    transpile: ['gsap']
-  }
-}
+  build: {
+    transpile: ["gsap"],
+  },
+};

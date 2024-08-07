@@ -1,7 +1,17 @@
 <template>
   <div class="socialsLogosDiv">
-    <img class="logoImage" src="../../assets/images/otherlogos/linkedin.png" />
-    <img class="logoImage" src="../../assets/images/otherlogos/github.png" />
+    <nuxt-link
+      to="https://www.linkedin.com/in/elene-dgebuadze-008617258/"
+      target="_blank"
+    >
+      <img
+        class="logoImage"
+        src="../../assets/images/otherlogos/linkedin.png"
+      />
+    </nuxt-link>
+    <nuxt-link to="https://github.com/eorime" target="_blank"
+      ><img class="logoImage" src="../../assets/images/otherlogos/github.png"
+    /></nuxt-link>
   </div>
 </template>
 

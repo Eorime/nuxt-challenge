@@ -2,7 +2,14 @@
   <div class="navigation">
     <ul class="list">
       <li class="item" v-for="(item, index) in navigationList" :key="index">
-        <nuxt-link class="item-link" :to="item.link"
+        <nuxt-link
+          :class="[
+            'item-link',
+            {
+              'is-active': item.link == navigation.pageName,
+            },
+          ]"
+          :to="item.link"
           ><span class="name"> {{ item.name }}</span></nuxt-link
         >
       </li>
@@ -11,6 +18,9 @@
 </template>
 
 <script setup>
+import { navigationStore } from "../../store/navigationStore";
+
+const navigation = navigationStore();
 const navigationList = [
   { name: "Home", link: "/" },
   { name: "About", link: "/about" },
@@ -32,6 +42,9 @@ const navigationList = [
     text-decoration: none;
     color: inherit;
     transition: color 0.2s ease-in;
+    &.is-active {
+      color: $hover-color;
+    }
     &:hover {
       cursor: pointer;
       color: $hover-color;
