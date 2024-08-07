@@ -1,5 +1,5 @@
 <template>
-  <div class="projects-page">projects</div>
+  <div class="projects-page"><header-main /></div>
 </template>
 
 <script setup></script>
