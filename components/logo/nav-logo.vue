@@ -1,14 +1,9 @@
 <template>
-    <div class="logo">
-<img src="../../assets/images/logo.png">
-    </div>
+  <div class="logo">
+    <img src="../../assets/images/logo.png" />
+  </div>
 </template>
 
-<script setup>
+<script setup></script>
 
-</script>
-
-<style lang="scss" scoped>
-
-
-</style>
+<style lang="scss" scoped></style>
