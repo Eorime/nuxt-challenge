@@ -10,7 +10,10 @@
             },
           ]"
           :to="item.link"
-          ><span class="name"> {{ item.name }}</span></nuxt-link
+        >
+          <!--Add a dynamic class only in case of a match between the link and the pageName (the changable variable from the store)-->
+
+          <span class="name"> {{ item.name }}</span></nuxt-link
         >
       </li>
     </ul>
@@ -45,6 +48,9 @@ const navigationList = [
     &.is-active {
       color: $hover-color;
     }
+
+    //stylize the dynamic class
+
     &:hover {
       cursor: pointer;
       color: $hover-color;

@@ -8,3 +8,5 @@ export const navigationStore = defineStore("navElements", {
     },
   },
 });
+
+//define a store with globally accessible variables and methods

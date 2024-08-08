@@ -19,6 +19,8 @@ watch(
 
 onMounted(() => {
   navigationData.changeButton(route.path);
+
+  //Change up the button from the get go
 });
 </script>
 
