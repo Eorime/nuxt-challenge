@@ -1,6 +1,7 @@
 <template>
   <div class="socialsLogosDiv">
     <nuxt-link
+      class="logoImage1"
       to="https://www.linkedin.com/in/elene-dgebuadze-008617258/"
       target="_blank"
     >
@@ -9,7 +10,7 @@
         src="../../assets/images/otherlogos/linkedin.png"
       />
     </nuxt-link>
-    <nuxt-link to="https://github.com/eorime" target="_blank"
+    <nuxt-link class="logoImage2" to="https://github.com/eorime" target="_blank"
       ><img class="logoImage" src="../../assets/images/otherlogos/github.png"
     /></nuxt-link>
   </div>

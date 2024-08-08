@@ -1,29 +1,33 @@
 $background-color: #dddddd;
 $font-color: #000000;
-$hover-color: #C16060;
+$hover-color: #c16060;
 $font-family: "Inter", sans-serif;
 $font-weight: 400;
 
-
 //ver waikitxa
 body {
-    background-color: $background-color;
-    font-family: $font-family;
-    color: $font-color;
-    font-weight: $font-weight;
+  background-color: $background-color;
+  font-family: $font-family;
+  color: $font-color;
+  font-weight: $font-weight;
+  opacity: 0;
+
+  &.is-loaded {
+    opacity: 1;
+  }
 }
 
 @mixin items-spacing($direction, $margin) {
-    display: flex;
-    @if $direction == 'vertical' {
-      flex-direction: column;
-      > * + * {
-        margin-top: $margin;
-      }
-    } @else if $direction == 'horizontal' {
-      flex-direction: row;
-      > * + * {
-        margin-left: $margin;
-      }
+  display: flex;
+  @if $direction == "vertical" {
+    flex-direction: column;
+    > * + * {
+      margin-top: $margin;
+    }
+  } @else if $direction == "horizontal" {
+    flex-direction: row;
+    > * + * {
+      margin-left: $margin;
     }
   }
+}

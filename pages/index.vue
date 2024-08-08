@@ -8,12 +8,48 @@
 </template>
 
 <script setup>
+import gsap from "gsap";
+
+const giveClass = () => {
+  document.body.classList.add("is-loaded");
+};
+
+const animation = () => {
+  gsap
+    .timeline()
+    .from(".logo", {
+      duration: 1,
+      opacity: 0,
+    })
+    .from(".navigation", {
+      duration: 1,
+      opacity: 0,
+    })
+    .from(".headerText", {
+      duration: 1,
+      opacity: 0,
+    })
+    .from(".socialsText", {
+      duration: 1,
+      opacity: 0,
+    })
+    .from(".logoImage1", {
+      duration: 1,
+      opacity: 0,
+    })
+    .from(".logoImage2", {
+      duration: 1,
+      opacity: 0,
+    })
+    .from(".mainImageDiv", {
+      duration: 1,
+      opacity: 0,
+    });
+};
+
 onMounted(() => {
-  // console.log('sdlkjsdkjl 0')
-  // gsap.from('.main-page', {
-  //     opacity: 0,
-  //     duration: 3
-  // })
+  giveClass();
+  animation();
 });
 </script>
 
