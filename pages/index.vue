@@ -1,9 +1,8 @@
 <template>
   <div class="main-page">
-    <common-header />
     <pages-home-tiny-header-text />
     <pages-home-socials-wrapper />
-    <mainimage-main-image />
+    <pages-home-tiny-main-image />
   </div>
 </template>
 
@@ -49,7 +48,7 @@ const animation = () => {
 
 onMounted(() => {
   giveClass();
-  animation();
+  // animation();
 });
 </script>
 

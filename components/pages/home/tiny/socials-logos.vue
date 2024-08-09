@@ -36,7 +36,7 @@ const socialLogos = [
 
     &:hover {
       cursor: pointer;
-      --path-fill: #ff0000;
+      --path-fill: #c88080;
     }
   }
   :deep(.nuxt-icon) {
