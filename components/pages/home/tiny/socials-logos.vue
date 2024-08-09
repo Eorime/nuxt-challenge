@@ -14,12 +14,10 @@
 const socialLogos = [
   {
     name: "linkedin",
-    imgageSrc: "/images/otherlogos/linkedin.png",
     link: "https://www.linkedin.com/in/elene-dgebuadze-008617258/",
   },
   {
     name: "github",
-    imgageSrc: "/images/otherlogos/github.png",
     link: "https://github.com/eorime",
   },
 ];

@@ -1,7 +1,7 @@
 <template>
   <div class="header">
-    <nav-logo />
-    <header-navigation />
+    <common-nav-logo />
+    <common-header-navigation />
   </div>
 </template>
 

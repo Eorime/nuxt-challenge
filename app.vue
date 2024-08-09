@@ -1,8 +1,8 @@
 <template>
-  <div id="app">
+  <NuxtLayout>
     <common-header />
     <NuxtPage />
-  </div>
+  </NuxtLayout>
 </template>
 
 <script setup>
@@ -18,8 +18,13 @@ watch(
   }
 );
 
+const giveClass = () => {
+  document.body.classList.add("is-loaded");
+};
+
 onMounted(() => {
   navigationData.changeButton(route.path);
+  giveClass();
 
   //Change up the button from the get go
 });

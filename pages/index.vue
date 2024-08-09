@@ -32,11 +32,11 @@ const animation = () => {
       duration: 1,
       opacity: 0,
     })
-    .from(".logoImage1", {
+    .from(".linkedin", {
       duration: 1,
       opacity: 0,
     })
-    .from(".logoImage2", {
+    .from(".github", {
       duration: 1,
       opacity: 0,
     })
@@ -48,7 +48,7 @@ const animation = () => {
 
 onMounted(() => {
   giveClass();
-  // animation();
+  animation();
 });
 </script>
 
