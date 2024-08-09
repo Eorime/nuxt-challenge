@@ -1,5 +1,5 @@
 <template>
-  <div class="about-page"><header-main /></div>
+  <div class="about-page"><common-header /></div>
 </template>
 
 <script setup></script>

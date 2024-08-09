@@ -1,8 +1,8 @@
 <template>
   <div class="main-page">
-    <header-main />
-    <headertext-header-text />
-    <socialswrapper-socials-wrapper />
+    <common-header />
+    <pages-home-tiny-header-text />
+    <pages-home-socials-wrapper />
     <mainimage-main-image />
   </div>
 </template>

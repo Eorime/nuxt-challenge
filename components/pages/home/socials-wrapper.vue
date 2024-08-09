@@ -1,7 +1,7 @@
 <template>
   <div class="socialsWrapper">
-    <socialstext-socials-text />
-    <socialslogos-socials-logos />
+    <pages-home-tiny-socials-text />
+    <pages-home-tiny-socials-logos />
   </div>
 </template>
 
@@ -12,6 +12,6 @@
   margin-left: 160px;
   display: flex;
   flex-direction: column;
-  margin-top: -50px;
+  margin-top: 80px;
 }
 </style>

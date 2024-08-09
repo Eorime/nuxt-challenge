@@ -21,7 +21,7 @@
 </template>
 
 <script setup>
-import { navigationStore } from "../../store/navigationStore";
+import { navigationStore } from "~/store/navigationStore";
 
 const navigation = navigationStore();
 const navigationList = [
@@ -39,6 +39,7 @@ const navigationList = [
     flex-direction: row;
     font-family: $font-family;
     font-size: 35px;
+    margin-top: 40px;
     @include items-spacing("horizontal", 20px);
   }
   .item-link {
