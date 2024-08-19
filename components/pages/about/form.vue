@@ -27,6 +27,9 @@
 
 <script setup>
 import { ref } from "vue";
+import { formDataStore } from "~/store/formDataStore";
+
+const formDataInfo = formDataStore();
 
 const inputs = [
   {
@@ -60,6 +63,10 @@ function checkInput() {
   const isFormValid = Object.values(formData.value).every(
     (value) => value.trim() !== ""
   );
+
+  if (isFormValid) formDataInfo.pushInputData(formData.value);
+
+  console.log(formDataInfo.formArray, formData.value);
 }
 </script>
 
